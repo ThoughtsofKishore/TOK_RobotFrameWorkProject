@@ -1,0 +1,1 @@
+robot -d Results  .\TestCases\TC_LoginPage.robot
