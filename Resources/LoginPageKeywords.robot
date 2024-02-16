@@ -4,10 +4,6 @@ Variables    ../PageObjects/LoginPageLocators.py
 
 
 *** Keywords ***
-Open my Browser
-    [Arguments]    ${SiteUrl}    ${Browser}
-    open browser    ${SiteUrl}    ${Browser}
-    maximize browser window
 
 Enter UserName
     [Arguments]    ${userName}
@@ -23,5 +19,3 @@ Click SignIn Button
 Verify Successful Login
     title should be    ${tittle_homepage}
 
-Close my Browser
-    close browser

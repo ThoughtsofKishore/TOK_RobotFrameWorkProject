@@ -1,10 +1,12 @@
 *** Settings ***
+Resource    ../Resources/BaseKeywords.robot
 Resource    ../Resources/LoginPageKeywords.robot
+Variables    ../TestData/BaseTestData.py
 Variables    ../TestData/LoginPageTestData.py
 
 
 *** Test Cases ***
-LoginPageTest
+LoginPage Test
     [Tags]    regression
     Open my Browser    ${data_url}    ${data_browser}
     set selenium speed    2
