@@ -1,15 +1,13 @@
 *** Settings ***
 Resource    ../Resources/BaseKeywords.robot
 Resource    ../Resources/LoginPageKeywords.robot
-Variables    ../TestData/BaseTestData.py
 Variables    ../TestData/LoginPageTestData.py
-
+Test Setup    Launch Mercury Login Page
 
 *** Test Cases ***
 LoginPage Test
     [Tags]    regression
-    Open my Browser    ${data_url}    ${data_browser}
-    set selenium speed    2
+    set selenium speed    1
     Enter UserName    ${data_username}
     Enter Password    ${data_password}
     Click SignIn Button

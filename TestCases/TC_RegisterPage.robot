@@ -1,12 +1,12 @@
 *** Settings ***
 Resource    ../Resources/BaseKeywords.robot
 Resource    ../Resources/RegisterPageKeywords.robot
-Variables    ../TestData/BaseTestData.py
 Variables    ../TestData/RegisterPageTestData.py
+Test Setup    Launch Mercury Login Page
 
 *** Test Cases ***
 RegisterPage Test
-    Open my Browser    ${data_url}    ${data_browser}
+    [Tags]    regression
     set selenium speed    1
     Click Register Link
     Enter First Name    ${data_firstname}
