@@ -19,3 +19,6 @@ Click SignIn Button
 Verify Successful Login
     title should be    ${tittle_homepage}
 
+Verify LoginPage Title
+    title should be    ${tittle_loginpage}
+

@@ -5,11 +5,17 @@ Variables    ../TestData/LoginPageTestData.py
 Test Setup    Launch Mercury Login Page
 
 *** Test Cases ***
-LoginPage Test
+LoginPage Title Test
+    [Tags]    regression
+    set selenium speed    1
+    Verify LoginPage Title
+    close browser
+
+Login Test
     [Tags]    regression
     set selenium speed    1
     Enter UserName    ${data_username}
     Enter Password    ${data_password}
     Click SignIn Button
     Verify Successful Login
-    Close my Browser
+    close browser
