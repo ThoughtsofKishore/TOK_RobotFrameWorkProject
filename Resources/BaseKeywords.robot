@@ -1,6 +1,5 @@
 *** Settings ***
 Library    SeleniumLibrary
-Variables    ../PageObjects/LoginPageLocators.py
 Variables    ../TestData/BaseTestData.py
 
 
